@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { School, Calendar, BookOpen } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -38,7 +37,7 @@ const EducationSection = () => {
       icon: <BookOpen className="h-10 w-10 text-primary" />
     },
     {
-      id: K3,
+      id: 3,
       institution: "Sri Kumaran's Children Home",
       degree: "High School Education",
       duration: "Until 2021",
