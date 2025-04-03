@@ -10,7 +10,6 @@ import ProjectsSection from "@/components/sections/ProjectsSection";
 import CertificationsSection from "@/components/sections/CertificationsSection";
 import LanguagesSection from "@/components/sections/LanguagesSection";
 import ContactSection from "@/components/sections/ContactSection";
-import { ThemeProvider } from "@/hooks/use-theme";
 
 const Index = () => {
   useEffect(() => {
@@ -63,22 +62,20 @@ const Index = () => {
   }, []);
   
   return (
-    <ThemeProvider defaultTheme="light">
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow">
-          <HeroSection />
-          <AboutSection />
-          <EducationSection />
-          <SkillsSection />
-          <ProjectsSection />
-          <CertificationsSection />
-          <LanguagesSection />
-          <ContactSection />
-        </main>
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-grow">
+        <HeroSection />
+        <AboutSection />
+        <EducationSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <CertificationsSection />
+        <LanguagesSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
