@@ -10,6 +10,7 @@ import ProjectsSection from "@/components/sections/ProjectsSection";
 import CertificationsSection from "@/components/sections/CertificationsSection";
 import LanguagesSection from "@/components/sections/LanguagesSection";
 import ContactSection from "@/components/sections/ContactSection";
+import ChatbotBubble from "@/components/ChatbotBubble";
 
 const Index = () => {
   useEffect(() => {
@@ -75,6 +76,7 @@ const Index = () => {
         <ContactSection />
       </main>
       <Footer />
+      <ChatbotBubble />
     </div>
   );
 };
